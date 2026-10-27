@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESTful API Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Student Management</h1>
+    <p>Practising RESTful API calls with JavaScript</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Add a Student</h2>
+      <form id="student-form">
+        <input
+          type="text"
+          id="student-name"
+          placeholder="Enter student name"
+          required
+        >
+        <input
+          type="email"
+          id="student-email"
+          placeholder="Enter student email"
+          required
+        >
+        <button type="submit">Add Student (POST)</button>
+      </form>
+    </section>
+
+    <section class="students-section">
+      <div class="section-heading">
+        <h2>Student Records</h2>
+        <button id="refresh-btn">Refresh (GET)</button>
+      </div>
+
+      <p id="status" role="status">Loading students...</p>
+      <div id="student-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>RESTful API Practice | Albashir Beti</p>
+  </footer>
+</body>
+</html>
